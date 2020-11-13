@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style type="text/css">
+        *{margin:0;padding: 0;}
+        ul,li{list-style: none;}
+        
+        header{position:fixed; left: 0; top: 0; width:100%; z-index: 10;} /* y축의 포지션 좌표 */
+        header .logo{text-align: center; background-color: white;}
+        .menu {text-align: center; background-color: black;}
+        .menu li{display: inline-block; padding: 30px;} 
+        .menu li:hover{background-color: #777;}/* 호버시 배경색 */
+        .menu li a{font-size: large; color: blanchedalmond; text-decoration: none;}
+        
+        section{height: 1000px; margin-top: 184px; background-color: aqua;}/* 헤더의 높이만큼 margin */
+        
+        /* 사이드 바 */
+        .side{position: fixed; right: 0; top: 300px; z-index: 10;}
+        .side li{background-color: #220e0e;text-align: center; padding: 10px 10px ; border-bottom: 1px solid white;}
+        .side li a{text-decoration: none; color: white; font-size: 10px; display:block}
+        .side li:hover{background-color: #777;}
+    </style>
+
+</head>
+<body>
+    <div class="test" style="position: fixed; z-index:20; right: 10px; top: 0;">로그인</div>
+
+    
+    <header>
+        <div class="logo">
+            <img src="img/bgimg.png">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        sdfsdfdsff
+    </section>
+
+    <!-- 우측 사이드 -->
+    <aside class="side">
+        <ul class="side-list">
+            <li>
+                <a href="#">
+                    <p>카카오톡</p>
+                    <p>kkk123</p>
+                </a>
+            </li>
+            <li><a href="#">전화번호</a></li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+        </ul>
+    </aside>
+
+</body>
+</html>
