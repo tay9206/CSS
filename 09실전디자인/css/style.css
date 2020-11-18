@@ -1,0 +1,83 @@
+        /* ========form,btn윤곽 */
+        .form-control{border-radius: 0;}
+        .btn{border-radius: 0;}
+        /*=========header======*/
+        section{margin-top: 50px;}
+
+        .my-header{background-color:#263238; position: fixed; top: 0; left: 0; width: 100%; z-index: 50;}
+        .my-header a{color: white; font-size: 15px;}
+
+        .navbar{margin-bottom: 0px;}
+        .navbar-brand{padding: 10px 20px;}
+        .nav>li>a:focus, .nav>li>a:hover{background-color: #304047;}
+        .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+            background-color: #304047;
+        
+        }
+        .navbar-toggle{border-color: white;}
+        .navbar-toggle .icon-bar{background-color: white;}
+
+
+
+        /*========footer========*/
+        footer{background-color: #263238; color: white; font-size: 13px; padding: 40px 0px; margin-top: 70px;}
+        footer .footer-copyright address{margin: 0;}
+        footer .footer-menu{text-align: right;} /*부트스트랩의 클래스 text-right속성으로 대체가능*/
+        footer .footer-menu li a{text-decoration: none; color: white; font-size: 13px;}
+        footer .footer-menu li{display: inline-block; padding:0px 10px;}
+
+
+        /*=======banner=========*/
+        .my-banner{position: relative;}
+        .carousel-control.right{background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%)}
+        .carousel-control.left{background-image: none;}
+
+
+
+        /*=========index=========*/
+        .prod-list,.prod-box{display: block;  border: 1px solid #ddd; text-align: center;}
+        .prod-list,.prod-list li{padding: 5px;}
+        .prod-box{position: relative;}
+        .prod-box .arrow{display: block; width: 35px; /*높이 넓이 주기위해 block으로 지정*/
+                        height: 35px;
+                        line-height: 35px; 
+                        position: absolute; /* 위치기반으로  올릴 부모클래스에 relative */
+                        bottom: 20px; 
+                        left: 20px;
+                        background-color:#ccc;
+                        color: white;
+                        opacity: 1;
+        }
+        .prod-box .hover{display: block; position: absolute; background-color: #1367e6; bottom: 20px; left: 20px; height: 35px; width: 100px; line-height: 35px; color: white;
+                        opacity: 0; /*투명도 0~1*/
+        }
+        /* hover기능시 arrow의 투명도 변경 */
+        .prod-box:hover > .arrow{opacity: 0;}
+        .prod-box:hover > .hover{opacity: 1;}
+        /* hover기능시 자신의 border값 변경 */
+        .prod-box:hover{border: 1px solid #1367e6;}
+
+
+
+
+
+        /*=========상품그리드========*/
+        .prod-image{text-align: center;} /*이미지를 가운데로*/
+        .prod-content{overflow: hidden; padding: 20px 0;} 
+        .prod-content .prod-info{float: left;}
+        .prod-content .prod-price{float: right;}
+        .prod-content .prod-info span,.prod-price strong{display: block;}
+        
+        
+
+        .prod-color{margin-top: -40px; opacity: 0; transition: opacity 0.5s ease-in-out}  /* transition(변경할옵션,주기,변경속도,딜레이초) */
+        .prod-color ul{overflow: hidden;}
+        .prod-color li{float: left; width: 20%;}
+        
+        .prod-list2:hover > .prod-color{
+            opacity: 1; /*호버시 숨겨놓은 영역의 투명도 1*/
+        } 
+
+        .text-center{overflow: hidden;}
+        .text-center button{float: right;}
+        .text-center ul{margin: 0;}
